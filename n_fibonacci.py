@@ -1,12 +1,23 @@
 """
 Filename: n_fibonacci.py
-Author: <NAME>
+Author: <Givens,CJ>
 Created: <DATE>
 Instructor: Holtslander
 """
 
 def n_fibonacci():
-    # Write your code here
+    n = int(input("Enter a whole number:\n"))
+
+    first = 0
+    second = 1
+
+    for i in range(n):
+        print(first, end=" ")
+        temp = first + second
+        first = second
+        second = temp
+
+    print()
 
 
 # You should not need to change any code below this point
